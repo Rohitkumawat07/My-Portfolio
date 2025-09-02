@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 20px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1rem;
+    text-transform: capitalize;
+    color: var(--yellow-theme-main-color);
+    margin-right: 10px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: var(--yellow-theme-main-color);
+      font-size: 36px;
+    }
+  }
+}

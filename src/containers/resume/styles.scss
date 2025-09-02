@@ -1,0 +1,244 @@
+.resume {
+  padding: 140px 40px 40px; 
+  scroll-margin-top: 120px; 
+  height: 100%;
+}
+
+.timeline {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 200px);
+
+  &__education {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &__header-text {
+      display: inline-block;
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1rem;
+      letter-spacing: 0.5px;
+      position: relative;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-bottom: 2px solid var(--yellow-theme-main-color);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    &__header-text::before,
+    &__header-text::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 5px;
+      background-color: var(--yellow-theme-main-color);
+      bottom: -1px;
+    }
+
+    &__header-text::before {
+      left: 0;
+    }
+
+    &__header-text::after {
+      right: 0;
+    }
+
+    &__vertical-timeline-element {
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+  &__experience {
+    width: 35%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &__header-text {
+      display: inline-block;
+      color: var(--yellow-theme-sub-text-color);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1rem;
+      letter-spacing: 0.5px;
+      position: relative;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-bottom: 2px solid var(--yellow-theme-main-color);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    &__header-text::before,
+    &__header-text::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 5px;
+      background-color: var(--yellow-theme-main-color);
+      bottom: -1px;
+    }
+
+    &__header-text::before {
+      left: 0;
+    }
+
+    &__header-text::after {
+      right: 0;
+    }
+
+    &__vertical-timeline-element {
+      padding: 0px 0px 30px 0px;
+
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+  // Common styles for both sections
+  &__experience,
+  &__education {
+    .vertical-timeline-element-title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.1;
+
+      .education-year {
+        font-size: 14px;
+        font-weight: 600;
+        color: #0af011;
+        background: rgba(76, 175, 80, 0.1);
+        padding: 6px 12px;
+        border-radius: 6px;
+        display: block;
+        width: fit-content;
+      }
+
+      .education-degree {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+        display: block;
+        width: 100%;
+      }
+
+      .education-institution {
+        font-size: 16px;
+        color: white;
+        margin: 0;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        line-height: 1.3;
+      }
+
+      .education-grade {
+        font-size: 15px;
+        color: white;
+        font-weight: 600;
+        background: rgba(62, 155, 65, 0.1);
+        padding: 6px 12px;
+        border-radius: 6px;
+        display: block;
+        width: fit-content;
+      }
+    }
+
+    .vertical-timeline-element-title-wrapper-description {
+      font-size: 18px;
+    }
+
+    .vertical-timeline-element-content {
+      box-shadow: none;
+    }
+
+    .vertical-timeline-element-content-arrow {
+      display: none;
+    }
+
+    .vertical-timeline-element-date {
+      opacity: 1;
+      color: var(--yellow-theme-sub-text-color);
+    }
+  }
+}
+
+.resume__mobile-heading {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    gap: 30px;
+
+    &__education,
+    &__experience {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .timeline {
+    padding: 10px;
+  }
+
+
+  .resume__mobile-heading {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0af011;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .vertical-timeline-element-title-wrapper {
+    h3,
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  .vertical-timeline-element-title-wrapper-description {
+    font-size: 16px;
+  }
+
+  .vertical-timeline-element-date {
+    font-size: 16px;
+  }
+  .wrapper h2{
+    display: none;
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
