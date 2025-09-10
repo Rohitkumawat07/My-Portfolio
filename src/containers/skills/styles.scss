@@ -150,12 +150,13 @@
   .skills {
     &::before {
       content: "Skills";
-      display: none;
+      // display: none;
       text-align: center;
-      font-size: 24px;
+      font-size: 33px;
       font-weight: 700;
-      color: #00ff6a; 
+      color: #15ff00; 
       margin-bottom: 20px;
+      margin-left: 30%;
       letter-spacing: 2px;
       text-transform: uppercase;
       animation: fadeInSkills 1.5s ease-in-out;

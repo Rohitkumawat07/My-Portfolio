@@ -81,7 +81,7 @@ const About = () => {
             end={{ transform: "translateX(0px)", opacity: 1 }}
           >
             <img
-              src="/About.jpg"
+              src="/About1.jpg"
               alt="about me"
               className="aboutImage"
             />

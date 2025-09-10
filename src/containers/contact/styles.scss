@@ -124,7 +124,22 @@
     }
   }
 }
-
+@media only screen and (max-width: 768px) {
+  .contact {
+    &::before {
+      content: "Contact";
+      // display: none;
+      text-align: center;
+      font-size: 33px;
+      font-weight: 700;
+      color: #15ff00; 
+      margin-bottom: 20px;
+      margin-left: 26%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: fadeInSkills 1.5s ease-in-out;
+    }
+  }}
 @keyframes expand {
   0% {
     width: 0;

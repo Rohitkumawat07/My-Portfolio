@@ -6,6 +6,8 @@ import Portfolio from './containers/portfolio';
 import Resume from './containers/resume';
 import Skills from './containers/skills';
 import Navbar from './components/navBar';
+import Footer from './containers/footer';
+
 
 function App() {
   return (
@@ -39,6 +41,11 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
+
+          <section id="footer">
+            <Footer />
+          </section>
+
       </div>
     </div>
   );
